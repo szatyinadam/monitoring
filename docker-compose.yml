@@ -16,6 +16,8 @@ services:
     - monitoring-network
     ports:
     - "3000:3000"
+    volumes:
+    - ${PWD}/grafana/prometheus.yml:/etc/grafana/provisioning/datasources/prometheus.yml
     depends_on:
     - prometheus
 
