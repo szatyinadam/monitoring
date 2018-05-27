@@ -17,7 +17,8 @@ services:
     ports:
     - "3000:3000"
     volumes:
-    - ${PWD}/grafana/prometheus.yml:/etc/grafana/provisioning/datasources/prometheus.yml
+    - ${PWD}/grafana/provisioning:/etc/grafana/provisioning
+    - ${PWD}/grafana/dashboards:/var/lib/grafana/dashboards
     depends_on:
     - prometheus
 
