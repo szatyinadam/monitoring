@@ -49,6 +49,15 @@ services:
     depends_on:
     - mysql
 
+  micrometer-app:
+    image: "szatyinadam/micrometer"
+    networks:
+    - monitoring-network
+    ports:
+    - "8080:8080"
+    depends_on:
+    - "mysql"
+
 networks:
   monitoring-network:
     driver: bridge
