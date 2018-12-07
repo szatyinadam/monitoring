@@ -11,7 +11,11 @@ When the Docker image is ready, the whole stack can be started with the ordinary
 Then the following URLs are available:
 - Grafana: [http://localhost:3000](http://localhost:3000) (username/password : admin/admin)
 - Prometheus: [http://localhost:9090](http://localhost:9090)
+- Application timer endpoint: [http://localhost:8080/metrics/timer](http://localhost:8080/metrics/timer)
+- Application counter endpoint: [http://localhost:8080/metrics/count](http://localhost:8080/metrics/count)
 - Scraping endpoints:
   * Host: [http://localhost:9100/metrics](http://localhost:9100/metrics)
   * MySQL [http://localhost:9104/metrics](http://localhost:9104/metrics)
   * Micrometer [http://localhost:8080/actuator/prometheus](http://localhost:8080/actuator/prometheus)
+
+
