@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM openjdk:17-ea-3-jdk-oraclelinux8
 VOLUME /tmp
 ARG JAR_FILE
 COPY ${JAR_FILE} app.jar
