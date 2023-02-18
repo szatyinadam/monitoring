@@ -43,7 +43,7 @@ public class MetricsController {
     }
 
     private int getRandomNumber(int min, int max) {
-        Random random = new Random();
+        var random = new Random();
         return random.ints(min, (max + 1)).findFirst().getAsInt() * 1000;
     }
 }

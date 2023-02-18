@@ -51,7 +51,7 @@ services:
     - mysql
 
   micrometer-app:
-    image: "szatyinadam/micrometer"
+    image: "docker.io/library/micrometer:0.0.1-SNAPSHOT"
     networks:
     - monitoring-network
     ports:

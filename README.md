@@ -3,7 +3,7 @@ A collection of configurations and an application to discover Prometheus + Grafa
 
 ## Setup
 Create Docker image from Spring Boot + Micrometer application (JDK + Maven required):  
-`cd app && mvn clean install -Pcreate-docker-image && cd ..`  
+`cd app && mvn spring-boot:build-image && cd ..`  
 
 When the Docker image is ready, the whole stack can be started with the ordinary compose command:  
 `docker-compose up`  
